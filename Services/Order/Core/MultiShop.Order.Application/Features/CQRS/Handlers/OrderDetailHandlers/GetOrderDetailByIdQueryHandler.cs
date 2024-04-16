@@ -12,11 +12,11 @@ using System.Threading.Tasks;
 
 namespace MultiShop.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers
 {
-	public class GetOrderDetailByIdQueryHandle
+	public class GetOrderDetailByIdQueryHandler
 	{
 		private readonly IRepository<OrderDetail> _repository;
 
-		public GetOrderDetailByIdQueryHandle(IRepository<OrderDetail> repository)
+		public GetOrderDetailByIdQueryHandler(IRepository<OrderDetail> repository)
 		{
 			_repository = repository;
 		}
