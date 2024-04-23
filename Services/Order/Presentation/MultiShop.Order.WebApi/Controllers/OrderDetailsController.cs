@@ -56,7 +56,7 @@ namespace MultiShop.Order.WebApi.Controllers
 		public async Task<IActionResult> UpdateOrderDetail(UpdateOrderDetailCommand command)
 		{
 			await _updateOrderDetailCommandHandler.Handle(command);
-			return Ok("Sipariş Detasyı başarıyla silindi");
+			return Ok("Sipariş Detasyı başarıyla güncellendi");
 		}
 	}
 }
